@@ -51,8 +51,6 @@ export class PinataClient {
                 endpoint = appendEndpointUrlParameter(endpoint, 'includeCount', options.includeCount);
         }
 
-        console.log(endpoint);
-
         const response = await fetch(endpoint, requestOptions);
 
         if (response.status != 200) {
