@@ -51,17 +51,17 @@ export default function Home() {
 
           ) : (
 
-            imageUrls.map(url => <div>
-                                    <img key={ self.crypto.randomUUID() } 
-                                      src={ url } 
-                                      style={{ 
-                                        margin: '1rem', 
-                                        height: '25rem', 
-                                        width: '25rem', 
-                                        objectFit: 'cover' 
-                                      }}>
+            imageUrls.map(url => <div key={ self.crypto.randomUUID() } >
+                                    <img src={ url } 
+                                         style={{ 
+                                          margin: '1rem', 
+                                          height: '25rem', 
+                                          width: '25rem', 
+                                          objectFit: 'cover' 
+                                        }}>
                                     </img>
-                                  </div>)
+                                  </div>
+                          )
 
           )
         }
