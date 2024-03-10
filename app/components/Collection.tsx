@@ -19,7 +19,7 @@ export const Collection: React.FC<CollectionProps> = (props) => {
 
   return (
 
-    <div style={{ padding: '2rem', width: '100%', background: 'black' }}>
+    <div style={{ width: '100%', background: 'black' }}>
 
       <div style={{ background: lightColor, color: darkColor, textAlign: 'center', padding: '6rem 0 5rem 0' }}>
         <h1 style={{  textTransform: 'uppercase', letterSpacing: '0.35rem' }}>{ props.title }</h1>

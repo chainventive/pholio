@@ -24,7 +24,7 @@ export const Book: React.FC<BookProps> = (props) => {
         Collections
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'row', gap: '6.5rem', justifyContent: 'center', padding: '5rem 0 0 0', width: '100%' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', gap: '6.5rem', justifyContent: 'center', padding: '5rem 0 8rem 0', width: '100%' }}>
         {
           props.collections.map(collection => <div key={ crypto.randomUUID() } style={{ position: 'relative', background: lightColor, borderRadius: '0.5rem', cursor: 'pointer' }}>
 
